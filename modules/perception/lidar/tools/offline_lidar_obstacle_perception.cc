@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *****************************************************************************/
-
+#include <Python.h>
 #include "Eigen/Dense"
 #include "gflags/gflags.h"
 #include "pcl/io/pcd_io.h"
@@ -330,15 +330,24 @@ class OfflineLidarObstaclePerception {
 }  // namespace perception
 }  // namespace apollo
 
-int main(int argc, char** argv) {
-  FLAGS_alsologtostderr = 1;
-  google::ParseCommandLineFlags(&argc, &argv, true);
-  google::InitGoogleLogging(argv[0]);
+//int main(int argc, char** argv) {
+//  Py_Initialize();
+//  PyRun_SimpleString("import sys\n"
+//                    "print(sys.executable)\n");
+//  PyRun_SimpleString("from time import time,ctime\n"
+//                     "print 'Today is',ctime(time())\n");
+//  Py_Finalize();
+//  return 0;  
+//}
+ int main(int argc, char** argv) {
+   FLAGS_alsologtostderr = 1;
+   google::ParseCommandLineFlags(&argc, &argv, true);
+   google::InitGoogleLogging(argv[0]);
 
-  apollo::perception::lidar::OfflineLidarObstaclePerception test;
-  if (!test.setup()) {
-    AINFO << "Failed to setup OfflineLidarObstaclePerception";
-    return -1;
-  }
-  return test.run() ? 0 : -1;
-}
+   apollo::perception::lidar::OfflineLidarObstaclePerception test;
+   if (!test.setup()) {
+     AINFO << "Failed to setup OfflineLidarObstaclePerception";
+     return -1;
+   }
+   return test.run() ? 0 : -1;
+ }

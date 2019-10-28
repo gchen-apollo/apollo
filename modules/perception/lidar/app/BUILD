@@ -32,7 +32,8 @@ cc_library(
         "//modules/perception/lidar/lib/scene_manager",
         "//modules/perception/proto:perception_config_schema_proto",
         "@eigen",
-    ],
+        "@python36",
+   ],
 )
 
 cc_library(

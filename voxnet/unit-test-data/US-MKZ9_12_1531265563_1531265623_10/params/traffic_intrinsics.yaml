@@ -1,0 +1,14 @@
+D: [0.0, 0.0, 0.0, 0.0, 0.0]
+K: [8333.3333, 0.0, 959.5, 0.0, 8333.3333, 539.5, 0.0, 0.0, 1.0]
+P: [8333.3333, 0.0, 960.0, 0.0, 0.0, 8333.3333, 540.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+R: [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+binning_x: 0
+binning_y: 0
+distortion_model: plumb_bob
+header:
+  frame_id: obstacle
+  seq: 0
+  stamp: {nsecs: 0, secs: 0}
+height: 1080
+roi: {do_rectify: false, height: 0, width: 0, x_offset: 0, y_offset: 0}
+width: 1920

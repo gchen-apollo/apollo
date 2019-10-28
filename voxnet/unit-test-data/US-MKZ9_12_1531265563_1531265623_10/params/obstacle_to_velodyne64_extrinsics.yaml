@@ -1,0 +1,17 @@
+child_frame_id: obstacle
+header:
+  frame_id: velodyne64
+  seq: 0
+  stamp:
+    nsecs: 0
+    secs: 0
+transform:
+  rotation:
+    w: 0.5215076266048779
+    x: -0.5001394746772327
+    y: 0.465442900447225
+    z: -0.5111293453577122
+  translation:
+    x: 0.3476404596108391
+    y: 0.2106821881984495
+    z: 0.06704852122779535

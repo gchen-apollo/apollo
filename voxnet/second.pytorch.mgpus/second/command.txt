@@ -1,0 +1,2 @@
+/home/chenguang09/anaconda3/bin/python /home/chenguang09/workspace/pytorch/projects/second.pytorch.mgpus/second/pytorch/train.py train --config_path=/home/chenguang09/workspace/pytorch/projects/second.pytorch.mgpus/second/configs/alpha.baidu.fhd.config --model_dir=/home/chenguang09/workspace/pytorch/projects/second.pytorch.mgpus/second/temp_model --resume=True
+

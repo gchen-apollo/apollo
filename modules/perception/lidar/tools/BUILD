@@ -19,6 +19,7 @@ cc_binary(
         "//modules/perception/proto:perception_config_schema_proto",
         "@eigen",
         "@pcl",
+        "@python36",
     ],
 )
 

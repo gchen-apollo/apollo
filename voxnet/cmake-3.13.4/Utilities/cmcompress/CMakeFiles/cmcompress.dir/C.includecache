@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/apollo/voxnet/cmake-3.13.4/Utilities/cmcompress/cmcompress.c
+cmcompress.h
+/apollo/voxnet/cmake-3.13.4/Utilities/cmcompress/cmcompress.h
+errno.h
+-
+string.h
+-
+
+/apollo/voxnet/cmake-3.13.4/Utilities/cmcompress/cmcompress.h
+stdio.h
+-
+

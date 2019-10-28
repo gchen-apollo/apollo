@@ -16,6 +16,8 @@ WORKSPACE
 generated_data_warehouse.conf
 modules/common/data/ssl_keys
 modules/perception/cuda_util/cmake_build
+# camke files
+# voxnet/cmake-3.13.4
 
 # Eclipse IDE files
 .project

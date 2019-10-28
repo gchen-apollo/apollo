@@ -1,0 +1,13 @@
+# calib format: translation_x translation_y translation_z rotation_x rotation_y rotation_z rotation_w
+calib_obstacle_to_velodyne64: 0.3476404596108391 0.2106821881984495 0.06704852122779535 -0.5001394746772327 0.465442900447225 -0.5111293453577122 0.5215076266048779
+obstacle_D: -0.536268 0.246096 -0.002573 -0.004909 0.0
+obstacle_K: 1948.414022 0.0 1079.787783 0.0 1941.514653 583.737564 0.0 0.0 1.0
+obstacle_image_width: 1920
+obstacle_image_height: 1080
+obstacle_image_scale: 1
+calib_traffic_to_obstacle: 0.275 0 0 -0.005389246 0.01850062 -9.9768e-05 0.99981511
+traffic_D: 0.0 0.0 0.0 0.0 0.0
+traffic_K: 8333.3333 0.0 959.5 0.0 8333.3333 539.5 0.0 0.0 1.0
+traffic_image_width: 1920
+traffic_image_height: 1080
+traffic_image_scale: 1

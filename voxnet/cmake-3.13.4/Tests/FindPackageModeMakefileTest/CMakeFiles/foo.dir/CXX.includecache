@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/apollo/voxnet/cmake-3.13.4/Tests/FindPackageModeMakefileTest/foo.cpp
+foo.h
+/apollo/voxnet/cmake-3.13.4/Tests/FindPackageModeMakefileTest/foo.h
+
+/apollo/voxnet/cmake-3.13.4/Tests/FindPackageModeMakefileTest/foo.h
+

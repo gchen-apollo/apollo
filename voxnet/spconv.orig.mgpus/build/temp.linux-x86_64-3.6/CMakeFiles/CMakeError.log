@@ -1,0 +1,80 @@
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" failed.
+Compiler: /usr/local/cuda/bin/nvcc 
+Build flags: "--expt-relaxed-constexpr";--compiler-bindir;/usr/bin/g++-7;-D__CUDA_NO_HALF_OPERATORS__;-D__CUDA_NO_HALF_CONVERSIONS__;-D__CUDA_NO_HALF2_OPERATORS__
+Id flags:  -v;--keep;--keep-dir;tmp
+
+The output was:
+1
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/local/cuda/bin
+#$ _THERE_=/usr/local/cuda/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_DIR_=targets/x86_64-linux
+#$ TOP=/usr/local/cuda/bin/..
+#$ NVVMIR_LIBRARY_DIR=/usr/local/cuda/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/usr/local/cuda/bin/../lib:/usr/local/apollo/paddlepaddle_dep/mkldnn/lib/:/usr/local/apollo/boost/lib:/usr/local/apollo/libtorch_gpu/lib:/usr/local/fast-rtps/lib:/usr/local/Qt5.5.1/5.5/gcc_64/lib:/usr/local/adolc/lib64:/usr/local/Qt5.5.1/5.5/gcc_64/lib:/usr/lib:/usr/lib/x86_64-linux-gnu:/apollo/lib:/apollo/bazel-genfiles/external/caffe/lib:/apollo/lib:/usr/local/apollo/local_integ/lib
+#$ PATH=/usr/local/cuda/bin/../nvvm/bin:/usr/local/cuda/bin:/home/chenguang09/.conda/envs/fuel-py36/bin:/usr/local/miniconda/condabin:/apollo/bazel-bin/cyber:/apollo/bazel-bin/cyber/tools/cyber_recorder:/apollo/bazel-bin/cyber/tools/cyber_monitor:/apollo/cyber/tools/cyber_launch:/apollo/cyber/tools/cyber_channel:/apollo/cyber/tools/cyber_node:/apollo/cyber/tools/cyber_service:/usr/local/Qt5.5.1/5.5/gcc_64/bin:/apollo/bazel-bin/modules/tools/visualizer:/apollo/bazel-bin/modules/data/tools/rosbag_to_record:/apollo/bazel-bin/cyber:/apollo/bazel-bin/cyber/tools/cyber_recorder:/apollo/bazel-bin/cyber/tools/cyber_monitor:/apollo/cyber/tools/cyber_launch:/apollo/cyber/tools/cyber_channel:/apollo/cyber/tools/cyber_node:/apollo/cyber/tools/cyber_service:/usr/local/Qt5.5.1/5.5/gcc_64/bin:/apollo/bazel-bin/modules/tools/visualizer:/apollo/bazel-bin/modules/data/tools/rosbag_to_record:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/apollo/scripts:/usr/local/miniconda/bin
+#$ INCLUDES="-I/usr/local/cuda/bin/../targets/x86_64-linux/include"  
+#$ LIBRARIES=  "-L/usr/local/cuda/bin/../targets/x86_64-linux/lib/stubs" "-L/usr/local/cuda/bin/../targets/x86_64-linux/lib"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+nvcc fatal   : Don't know what to do with '"--expt-relaxed-constexpr"'
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_eb647/fast"
+/usr/bin/make -f CMakeFiles/cmTC_eb647.dir/build.make CMakeFiles/cmTC_eb647.dir/build
+make[1]: Entering directory '/apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_eb647.dir/CheckSymbolExists.cxx.o
+/usr/bin/g++-7    -DVERSION_INFO=\"1.1\"    -o CMakeFiles/cmTC_eb647.dir/CheckSymbolExists.cxx.o -c /apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_eb647
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb647.dir/link.txt --verbose=1
+/usr/bin/g++-7  -DVERSION_INFO=\"1.1\"     CMakeFiles/cmTC_eb647.dir/CheckSymbolExists.cxx.o  -o cmTC_eb647 
+CMakeFiles/cmTC_eb647.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_eb647.dir/build.make:86: recipe for target 'cmTC_eb647' failed
+make[1]: *** [cmTC_eb647] Error 1
+make[1]: Leaving directory '/apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_eb647/fast' failed
+make: *** [cmTC_eb647/fast] Error 2
+
+File /apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fac37/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fac37.dir/build.make CMakeFiles/cmTC_fac37.dir/build
+make[1]: Entering directory '/apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fac37.dir/CheckFunctionExists.cxx.o
+/usr/bin/g++-7    -DVERSION_INFO=\"1.1\" -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fac37.dir/CheckFunctionExists.cxx.o -c /apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_fac37
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fac37.dir/link.txt --verbose=1
+/usr/bin/g++-7  -DVERSION_INFO=\"1.1\" -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_fac37.dir/CheckFunctionExists.cxx.o  -o cmTC_fac37 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fac37.dir/build.make:86: recipe for target 'cmTC_fac37' failed
+make[1]: *** [cmTC_fac37] Error 1
+make[1]: Leaving directory '/apollo/voxnet/spconv.orig.mgpus/build/temp.linux-x86_64-3.6/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fac37/fast' failed
+make: *** [cmTC_fac37/fast] Error 2
+
+

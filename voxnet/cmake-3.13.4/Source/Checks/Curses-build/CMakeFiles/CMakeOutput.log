@@ -1,0 +1,28 @@
+Determining if the function wsyncup exists in the /usr/lib/x86_64-linux-gnu/libcurses.so passed with the following output:
+Change Dir: /apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fa0d6/fast"
+make -f CMakeFiles/cmTC_fa0d6.dir/build.make CMakeFiles/cmTC_fa0d6.dir/build
+make[1]: Entering directory '/apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fa0d6.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=wsyncup   -o CMakeFiles/cmTC_fa0d6.dir/CheckFunctionExists.c.o   -c /apollo/voxnet/cmake-3.13.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fa0d6
+/apollo/voxnet/cmake-3.13.4/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_fa0d6.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=wsyncup    -rdynamic CMakeFiles/cmTC_fa0d6.dir/CheckFunctionExists.c.o  -o cmTC_fa0d6 -lcurses 
+make[1]: Leaving directory '/apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function cbreak exists in the /usr/lib/x86_64-linux-gnu/libncurses.so passed with the following output:
+Change Dir: /apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_73650/fast"
+make -f CMakeFiles/cmTC_73650.dir/build.make CMakeFiles/cmTC_73650.dir/build
+make[1]: Entering directory '/apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_73650.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=cbreak   -o CMakeFiles/cmTC_73650.dir/CheckFunctionExists.c.o   -c /apollo/voxnet/cmake-3.13.4/Modules/CheckFunctionExists.c
+Linking C executable cmTC_73650
+/apollo/voxnet/cmake-3.13.4/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTC_73650.dir/link.txt --verbose=1
+/usr/bin/gcc  -DCHECK_FUNCTION_EXISTS=cbreak    -rdynamic CMakeFiles/cmTC_73650.dir/CheckFunctionExists.c.o  -o cmTC_73650 -lncurses 
+make[1]: Leaving directory '/apollo/voxnet/cmake-3.13.4/Source/Checks/Curses-build/CMakeFiles/CMakeTmp'
+
+

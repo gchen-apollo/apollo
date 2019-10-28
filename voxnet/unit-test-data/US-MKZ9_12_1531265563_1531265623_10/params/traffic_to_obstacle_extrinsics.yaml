@@ -1,0 +1,17 @@
+child_frame_id: traffic
+header:
+  frame_id: obstacle
+  seq: 0
+  stamp:
+    nsecs: 0
+    secs: 0
+transform:
+  rotation:
+    w: 0.99981511
+    x: -0.005389246
+    y: 0.01850062
+    z: -9.9768e-05
+  translation:
+    x: 0.275
+    y: 0
+    z: 0

@@ -1,0 +1,37 @@
+# CMake generated Testfile for 
+# Source directory: /apollo/voxnet/cmake-3.13.4/Tests/CMakeTests
+# Build directory: /apollo/voxnet/cmake-3.13.4/Tests/CMakeTests
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.
+add_test(CMake.List "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ListTest.cmake")
+add_test(CMake.VariableWatch "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/VariableWatchTest.cmake")
+add_test(CMake.Include "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/IncludeTest.cmake")
+add_test(CMake.FindBase "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/FindBaseTest.cmake")
+add_test(CMake.Toolchain "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ToolchainTest.cmake")
+add_test(CMake.GetFilenameComponentRealpath "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/GetFilenameComponentRealpathTest.cmake")
+add_test(CMake.Version "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/VersionTest.cmake")
+add_test(CMake.Message "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/MessageTest.cmake")
+add_test(CMake.File "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/FileTest.cmake")
+add_test(CMake.ImplicitLinkInfo "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ImplicitLinkInfoTest.cmake")
+add_test(CMake.ModuleNotices "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ModuleNoticesTest.cmake")
+add_test(CMake.GetProperty "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/GetPropertyTest.cmake")
+add_test(CMake.If "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/IfTest.cmake")
+add_test(CMake.String "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/StringTest.cmake")
+add_test(CMake.Math "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/MathTest.cmake")
+add_test(CMake.CMakeMinimumRequired "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/CMakeMinimumRequiredTest.cmake")
+add_test(CMake.CompilerIdVendor "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/CompilerIdVendorTest.cmake")
+add_test(CMake.ProcessorCount "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-DKWSYS_TEST_EXE=/apollo/voxnet/cmake-3.13.4/Source/kwsys/cmsysTestsCxx" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ProcessorCountTest.cmake")
+add_test(CMake.PushCheckState "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/PushCheckStateTest.cmake")
+add_test(CMake.While "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/WhileTest.cmake")
+add_test(CMake.CMakeHostSystemInformation "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/CMakeHostSystemInformationTest.cmake")
+add_test(CMake.FileDownload "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/FileDownloadTest.cmake")
+set_tests_properties(CMake.FileDownload PROPERTIES  PASS_REGULAR_EXPRESSION "file already exists with expected MD5 sum")
+add_test(CMake.FileDownloadBadHash "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/FileDownloadBadHashTest.cmake")
+set_tests_properties(CMake.FileDownloadBadHash PROPERTIES  WILL_FAIL "TRUE")
+add_test(CMake.FileUpload "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/FileUploadTest.cmake")
+add_test(CMake.ELF "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/ELFTest.cmake")
+add_test(CMake.EndStuff "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-Ddir:STRING=/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/EndStuffTest" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/EndStuffTest.cmake")
+add_test(CMake.GetPrerequisites "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-DConfiguration:STRING=" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/GetPrerequisitesTest.cmake")
+add_test(CMake.PolicyCheck "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-DCMake_BINARY_DIR:PATH=/apollo/voxnet/cmake-3.13.4" "-DCMake_SOURCE_DIR:PATH=/apollo/voxnet/cmake-3.13.4" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/PolicyCheckTest.cmake")
+add_test(CMake.CheckSourceTree "/apollo/voxnet/cmake-3.13.4/bin/cmake" "-DCMake_BINARY_DIR:PATH=/apollo/voxnet/cmake-3.13.4" "-DCMake_SOURCE_DIR:PATH=/apollo/voxnet/cmake-3.13.4" "-DGIT_EXECUTABLE:STRING=/usr/bin/git" "-DHOME:STRING=/home/chenguang09" "-P" "/apollo/voxnet/cmake-3.13.4/Tests/CMakeTests/CheckSourceTreeTest.cmake")
